@@ -445,16 +445,23 @@ button[type="submit"]:hover {
 
 .updates-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
 .update-item {
-    background-color: #1c1c1c;
-    padding: 1rem;
+    background-color: #333;
+    padding: 20px;
     border-radius: 10px;
     color: #f4f4f4;
-    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.update-item iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 16/9;
 }
 
 .update-item:hover {
