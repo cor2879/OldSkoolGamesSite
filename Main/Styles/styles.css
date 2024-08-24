@@ -477,3 +477,7 @@ button[type="submit"]:hover {
     margin-bottom: 0.5rem;
     line-height: 1.6;
 }
+
+.selected {
+    color: #FFFFFF
+}
